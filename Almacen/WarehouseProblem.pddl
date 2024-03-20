@@ -1,0 +1,11 @@
+(define (problem warehouse_robot_problem)
+  (:domain warehouse_robot)
+  (:objects robot1 - robot location1 location2 location3 - location)
+  (:init
+    (at robot1 location1)
+    (adjacent location1 location2)
+    (adjacent location2 location3)
+    (free robot1)
+  )
+  (:goal (at robot1 location3))
+)
